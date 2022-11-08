@@ -1,0 +1,24 @@
+{
+  "name": "wik-dps-tp01",
+  "version": "1.0.0",
+  "description": "Le but du TP était de développer une API.\r Notre API devait :\r * Retourner au format `JSON` les headers de la requête quand il y une requête `HTTP GET` sur `/ping`\r * Ecouter sur un port configurable via la variable d'environnement : `PING_LISTEN_PORT`\r * Renvoyer une réponse vide avec code 404 si la requête quoi que ça soit d'autre que `GET /ping`\r * Renvoyer une réponse vide code 500 si l'erreur était inconnue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattox0/WIK-DPS-TP01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mattox0/WIK-DPS-TP01/issues"
+  },
+  "homepage": "https://github.com/Mattox0/WIK-DPS-TP01#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.4",
+    "typescript": "^4.8.4"
+  }
+}
