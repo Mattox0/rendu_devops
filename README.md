@@ -1,1 +1,3 @@
-# rendu_devops
+# Rendu DevOps
+
+### Voici tous les projets liés au cours de DevOps
