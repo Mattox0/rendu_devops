@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: serverrs
+  labels:
+    app: serverrs
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      link: link
+  template:
+    metadata:
+      labels:
+        link: link
+    spec:
+      containers:
+      - name: serverrs
+        image: registry.cluster.wik.cloud/public/echo
+        ports:
+        - containerPort: 8080

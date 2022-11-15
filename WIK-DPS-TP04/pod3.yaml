@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: serverdeploy
+  namespace: default
+  labels:
+    app: serverdeploy
+spec:
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 50%
+  selector:
+    matchLabels:
+      link: link
+  template:
+    metadata:
+      labels:
+        link: link
+    spec:
+      containers:
+      - name: serverdeploy
+        image: registry.cluster.wik.cloud/public/echo
+        ports:
+        - containerPort: 8080
