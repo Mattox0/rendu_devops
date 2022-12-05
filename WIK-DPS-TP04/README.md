@@ -89,5 +89,3 @@ On voit que le service fonctionne bien.
 ## Créer un Ingress
 
 ### Fichier YAML : [./pod5.yaml](./pod5.yaml)
-
-```
